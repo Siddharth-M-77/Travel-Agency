@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern Travel Booking Form</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+    body {
+      background-image: url("https://cdn.pixabay.com/photo/2021/12/03/20/59/town-6843799_1280.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+    </head>
+    <body class="bg-opacity-50 min-h-screen flex items-center justify-center">
+        <div
+            class="bg-white w-1/2 min-h-[90vh] bg-opacity-20 p-4 rounded-2xl shadow-2xl mx-auto">
+            <div class="flex justify-center mb-2 overflow-hidden">
+                <img
+                    src="https://tse4.mm.bing.net/th?id=OIP.Yx0uJruCrTz85C30Mvzt4wHaGp&pid=Api&P=0&h=220"
+                    alt="Logo" class="w-20 h-20 rounded-full">
+            </div>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Book
+                Your Trip</h2>
+            <form action="#" class="">
+                <!-- Departure City -->
+                <div class="mb-3 w-full">
+                    <label for="departure"
+                        class="block text-xl font-serif font-semibold text-black mb-2 font-bold">Departure
+                        City</label>
+                    <div class="relative">
+                        <select id="departure"
+                            class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-3 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition appearance-none">
+                            <option value disabled selected>Select departure
+                                city</option>
+                            <option value="nyc">New York City</option>
+                            <option value="la">Los Angeles</option>
+                            <option value="sf">San Francisco</option>
+                            <option value="chi">Chicago</option>
+                        </select>
+                        <div
+                            class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination City -->
+                <div class="mb-3">
+                    <label for="destination"
+                        class="block text-xl font-serif font-semibold text-black mb-2 font-bold">Destination
+                        City</label>
+                    <div class="relative">
+                        <select id="destination"
+                            class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-3 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition appearance-none">
+                            <option value disabled selected>Select destination
+                                city</option>
+                            <option value="ldn">London</option>
+                            <option value="par">Paris</option>
+                            <option value="tok">Tokyo</option>
+                            <option value="syd">Sydney</option>
+                        </select>
+                        <div
+                            class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departure Date -->
+                <div class="mb-3">
+                    <label for="departure-date"
+                        class="block text-xl font-serif font-semibold text-black mb-2 font-bold">Departure
+                        Date</label>
+                    <input type="date" id="departure-date"
+                        class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-3 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                </div>
+
+                <!-- Return Date -->
+                <div class="mb-3">
+                    <label for="return-date"
+                        class="block text-xl font-serif font-semibold text-black mb-2 font-bold">Return
+                        Date</label>
+                    <input type="date" id="return-date"
+                        class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-3 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                </div>
+
+                <!-- Number of Travelers -->
+                <div class="mb-3">
+                    <label for="travelers"
+                        class="block text-xl font-serif font-semibold text-black mb-2 font-bold">Number
+                        of Travelers</label>
+                    <input type="number" id="travelers" min="1" max="10"
+                        value="1"
+                        class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-3 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit"
+                        class="bg-indigo-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-600 transition-colors focus:outline-none focus:ring-4 focus:ring-indigo-400">
+                        Book Now
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
